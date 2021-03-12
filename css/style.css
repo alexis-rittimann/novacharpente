@@ -1,7 +1,55 @@
-html, body {
-cursor: url(../img/1.png),auto;
-height: 100%;
-width: 100%;
-overflow-x: hidden;
-position: relative;
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	background: white;
+	cursor: none;
+	overflow: hidden;
 }
+
+a{
+cursor:none;}
+
+.cursor {
+	width: 40px;
+	height: 40px;
+	border: 1.5px solid #563003;
+	border-radius: 50%;
+	position: absolute;
+	pointer-events: none;
+}
+
+.cursor::before {
+	content: '';
+	position: absolute;
+	top : 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 5px;
+	height: 5px;
+	background: #563003;
+	border-radius: 50%;
+
+}
+
+.expand {
+	animation: Anim1 .5s;
+	background: #563003;
+	border: 1.5px solid #563003;
+}
+
+@keyframes Anim1 {
+	0%{
+		transform: scale(1);
+	}
+
+	50%{
+		transform: scale(2);
+	}
+
+	100%{
+		transform: scale(1);
+		opacity:0;
+	}
+}
+
