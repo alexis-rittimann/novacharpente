@@ -1,0 +1,74 @@
+
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background:black;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+.line1,.line2{
+  width: 3rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background: white;
+  pointer-events: none;
+}
+.nav-header{
+  min-height: 10vh;
+  font-size: 1em;
+  color: white;
+  left: 80%;
+  width: 100%;
+  padding: 2rem 10rem;
+  z-index: 2;
+  position: fixed;
+}
+.nav-bar{
+  position: fixed;
+ 
+  top: 0;
+  left: 55%;
+  width: 0%;
+  height: 0%;
+  color: #111111;
+  background-image: url(./img/18.jpg);
+  display: block;
+ align-items: center;
+ clip-path: circle(0px at 100% -10%);
+  
+}
+
+.svg-menu {
+  overflow: hidden;
+  position: fixed;
+  right:0;
+visibility: hidden;
+
+}
+.close-menu{
+  animation: menu 2s;
+  visibility :visible;
+}
+@keyframes menu{
+  100%{
+    transform: translateX(50%);
+  }
+}
+.nav-links{
+  margin-top: 5%;
+  font-size: 2.5rem;
+  flex-basis: 20rem;
+  margin-left: 5%;
+}
+.nav-links a{
+
+  text-decoration: none;
+  color: #111111;
+ 
+}
+.nav-links h3{
+  padding: 1rem 0rem;
+}
+/*d="M360,154.44 C420,94.23 420,40.95 360,1  L1000,1 L1000,163.31 Z"*/
