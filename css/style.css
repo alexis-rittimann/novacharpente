@@ -1,0 +1,7 @@
+html, body {
+cursor: url(../img/1.png),auto;
+height: 100%;
+width: 100%;
+overflow-x: hidden;
+position: relative;
+}
