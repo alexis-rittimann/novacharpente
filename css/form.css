@@ -1,0 +1,129 @@
+.contact{
+	display: flex;
+	flex-direction: row;
+	margin-top: 5%;
+	
+}
+.title-page{
+	display: flex;
+	align-items: center;
+	margin-left: 5%;
+}
+.title-page h3{
+ transform: rotate(-90deg);
+ font-size: 4rem;
+ border-bottom: 1px solid #563003;
+ color: #563003;
+ font-family: "Montserra",sans-serif;
+
+}
+.formcontact{
+	width: 100%;
+	height: 100%;	
+	margin-left: 10%;
+}
+
+.formcontact ul{
+	list-style: none;
+	display: inline-block;
+	padding-left: 50px;
+	
+}
+.formcontact li{
+display: block;
+padding-left: 30px;
+padding-top: 40px;
+}
+.form input
+{
+  	padding-top: 20px;
+	outline: none;
+	display: block;
+	border: none;
+	border-bottom:1px solid #E6D9B0;
+	font: 20px "Montserrat", sans-serif;
+	width: 100%;
+	height: 100%;
+ 	 color :#563003;
+ 	 background: transparent;
+}
+
+.form textarea{
+	resize:none;
+	outline: none;
+	display: block;
+	border: none;
+	border-bottom:1px solid #E6D9B0;
+	font: 20px "Montserrat", sans-serif;
+	width: 50%;
+	padding-top: 20px;
+	background: transparent;
+	color :#563003;
+  }
+iframe{
+	bottom: 0;
+	position: fixed;
+}	
+
+.form{
+	position:relative;
+	height: 50px;
+}
+.form input:focus + label span,
+.form input:valid + label span
+{
+  transform: translateY(-150%);
+  
+}
+.form textarea:focus + label span,
+.form textarea:not(:placeholder-shown) + label span  {
+  transform: translateY(-200%);
+  
+}
+.form input:focus + label::after,
+.form input:valid + label::after {
+  transform: translateX(0%);
+}
+
+.form textarea:focus + label::after,
+.form textarea:not(:placeholder-shown) + label::after{
+	transform: translateX(10%);
+}
+.form label {
+	content: "";
+  	position: absolute;
+  	bottom: -10px;
+  	left:0%;
+	width: 100%;
+	height: 100%;
+	color :#563003;
+	font: 20px "Montserrat", sans-serif;
+  }
+.form label::after {
+  content: "";
+  position: absolute;
+  left:0;
+  bottom: -1px;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100%);
+  
+}
+.form span{
+  position: absolute;
+  bottom:5px;
+  left:0;
+  transition: all 0.3s ease;
+
+}
+.formcontact label:last-child{
+	width: 50%;
+	color :#563003;
+	font: 18px "Montserrat", sans-serif;
+	display: block;
+	padding-top: 50px;
+}
+.btn input[type=submit]{
+	background-image: url(../img/1.png);
+	float:right ;
+}

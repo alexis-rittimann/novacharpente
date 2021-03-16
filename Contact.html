@@ -2,47 +2,67 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" >
+    <link rel="stylesheet" type="text/css"  href="./css/form.css" >
   </head>
 <body>
+  <div class=contact>
     <div class="title-page">
-        <h3> Contact </h3>
+        <h3> CONTACT </h3>
     </div>
 
     <form action="mailer-contact.php" method="post" class="formcontact" enctype="multipart/form-data" >
         <ul>
 
               <li >
-                <label for="name">Nom* :</label>
-                <input type="text" id="name" name="name"  placeholder="Entrer votre nom" required >
+                <div class="form">
+                <input type="text" id="nom" name="nom"  placeholder=" "  required >
+                <label for="nom"><span >Nom</span></label>
+                </div>
+              </li>
+              <li>
+                <div class="form">
+                <input type="email" id="mail" name="mail"  placeholder=" " required>
+                <label for="mail"><span >Email</span></label>
+              </div>
             </li>
+        </ul>
+        <ul>
             <li >
-                <label for="mail">E-mail* :</label>
-                <input type="email" id="mail" name="mail" placeholder="Entrer votre email" required>
+              <div class="form">
+                <input type="text" id="prenom" name="prenom"  placeholder=" " required >
+                <label for="prenom"><span >Prénom</span></label>
+              </div>
               </li>
-              <li >
-                <label for="mail">Téléphone* :</label>
-                <input type="tel" id="tel" name="tel" placeholder="Entrer votre numéro de téléphone" required>
+              <li>
+                <div class="form">
+                <input type="tel" id="tel" name="tel" placeholder=" " required>
+                <label for="tel"><span >Téléphone</span></label>
+              </div>
               </li>
+            </ul>
+            <ul>
               <li >
-                <label for="msg">Message* :</label>
-                <textarea id="msg" name="msg" placeholder="Entrer votre message"></textarea>
+               <div class="form">
+                <textarea id="msg" name="msg"  placeholder=" "></textarea>
+                <label for="msg"><span >Message</span></label>
+              </div>
               </li>
               
               <li >
-                <p>
-                  <input  type="checkbox" value="" required>
-                 J'accepte que les informations saisies dans ce formulaire soient utilisées, exploitées ou traitées pour permettre de me recontacter  dans le cadre de la relation commerciale qui découle de cette demande.</p>
-               </li>
-              <button type="submit" class="btn">Envoyer</button>
-              <li>
-                <p>* Champs Obligatoires
-                </p>
-              </li>
+                
+                <label for="check" class="terms">
+                  <input  type="checkbox" id="check" value="" required>
+                 J'accepte que les informations saisies dans ce formulaire soient utilisées, exploitées ou traitées pour permettre de me recontacter  dans le cadre de la relation commerciale qui découle de cette demande.</label>
+                
+                </li>
+
+                <button type="submit" class="btn">Envoyer</button>
+            
           </ul>
           </form>
-
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4963.28488652065!2d4.842455756156237!3d45.76448760306659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea58ca29c327%3A0xafaa769edffbe135!2s72%20Avenue%20Mar%C3%A9chal%20de%20Saxe%2C%2069003%20Lyon!5e0!3m2!1sfr!2sfr!4v1613124553108!5m2!1sfr!2sfr" width="100%" height="150%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4963.28488652065!2d4.842455756156237!3d45.76448760306659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea58ca29c327%3A0xafaa769edffbe135!2s72%20Avenue%20Mar%C3%A9chal%20de%20Saxe%2C%2069003%20Lyon!5e0!3m2!1sfr!2sfr!4v1613124553108!5m2!1sfr!2sfr" width="100%" height="30%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
   </nav>
   <script

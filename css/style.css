@@ -7,13 +7,18 @@ body {
 	overflow: hidden;
 }
 
-a,li,label,input[type="text"],
+a,
+li,
+div,
+label,
+input[type="text"],
 input[type="tel"],
- input[type="email"], 
- textarea,
- input[type="checkbox"],
- button{
-cursor:none;}
+input[type="email"], 
+textarea,
+input[type="checkbox"],
+button{
+cursor:none;
+}
 
 .cursor {
 	width: 40px;
