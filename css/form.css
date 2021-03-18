@@ -2,7 +2,7 @@
 	display: flex;
 	flex-direction: row;
 	margin-top: 5%;
-	
+	position: fixed;
 }
 .title-page{
 	display: flex;
@@ -26,13 +26,12 @@
 .formcontact ul{
 	list-style: none;
 	display: inline-block;
-	padding-left: 50px;
+	padding-left: 10%;
 	
 }
 .formcontact li{
 display: block;
-padding-left: 30px;
-padding-top: 40px;
+padding-top: 50px;
 }
 .form input
 {
@@ -68,6 +67,7 @@ iframe{
 .form{
 	position:relative;
 	height: 50px;
+	
 }
 .form input:focus + label span,
 .form input:valid + label span
@@ -127,11 +127,152 @@ iframe{
 .formcontact input[type=checkbox]{
 	height: 25px;
  	 width: 25px;
-	 vertical-align:30px;
+	 vertical-align:15px;
+	 
 	}
 .btn {
 	background-image: url(../img/1.png);
 	float:right ;
 	margin-right: 30%;
 	margin-top: -5%;
+}
+@media screen and (max-width:1024px){
+	.title-page{
+		font-size: 3rem;
+		margin-left: 0;
+		margin-top: 5%;
+	}
+	.formcontact{
+		margin-left:0;
+		margin-top: 5%;
+	}
+	.form label {
+		font-size:15px;
+	}
+	.form input{
+		font-size:15px;
+	}
+	iframe{
+		height: 15%;
+	}
+
+
+.formcontact li{
+padding: 20px 20px 20px 20px;
+	
+}
+
+.formcontact label:last-child{
+	font-size: 16px;
+	width: 70%;
+}
+.formcontact input[type=checkbox]{
+	margin-top: 5%;
+	}
+	.btn {
+	margin-right: 10%;
+	margin-top: -10%;
+	}
+	
+}
+@media screen and (max-height:900px){
+	iframe{
+		height: 15%;
+	}
+	.contact{
+		position: relative;
+	}
+	.formcontact label:last-child{
+		padding-top:10px;
+	}
+}
+@media screen and (min-device-width:551px )and (max-device-width:700px){
+	.contact{
+		margin-top: 5%;
+	}
+	.formcontact{
+		margin-left:5%;
+	}
+	
+	iframe{
+		height: 15%;
+	}
+	.formcontact label{
+		font-size: 20px;
+	}
+	.formcontact label:last-child{
+		font-size: 20px;
+		width: 100%;
+	}
+	.form input{
+		font-size:20px;
+	}
+.formcontact ul{
+	padding-left: 0;
+	width: 50%;
+}
+.formcontact li{
+	padding-left: 0;
+	
+}
+
+.btn {
+	margin-right: 20%;
+	margin-top: 35%;
+	}
+}
+
+@media screen and (min-device-width:376px )and (max-device-width:550px){
+	.contact{
+	margin-top: 5%;
+	margin-left: -5%;
+	}
+	.formcontact label{
+		font-size: 27px;
+	}
+	.formcontact label:last-child{
+		font-size: 27px;
+		width: 100%;
+		display:inline;
+		
+	}
+	.formcontact li{
+		padding-top: 50px;
+		
+	}
+	.form input{
+		font-size:25px;
+	}
+	.btn {
+		margin-right: -10%;
+		margin-top: 0;
+		float: none;
+		}
+}
+@media screen and (max-device-width:375px){
+	.contact{
+	margin-top: 8%;
+	margin-left: -5%;
+	}
+	.formcontact label{
+		font-size: 35px;
+	}
+	.formcontact label:last-child{
+		font-size: 35px;
+		width: 100%;
+		display: inline;
+		
+	}
+	.formcontact li{
+		padding-top: 50px;
+		
+	}
+	.form input{
+		font-size:30px;
+	}
+	.btn {
+		margin-right: -10%;
+		margin-top: 0;
+		float: none;
+		}
 }
