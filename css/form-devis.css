@@ -8,22 +8,9 @@
 	display: flex;
 	align-items: center;
 	margin-left: 5%;
+    width: 36%;
 }
 .title-page h3{
- transform: rotate(-90deg);
- font-size: 4rem;
- border-bottom: 1px solid #563003;
- color: #563003;
- font-family: "Montserra",sans-serif;
-
-}
-.title-page-devis{
-	display: flex;
-	align-items: center;
-	margin-left: 5%;
-	width: 50%;
-}
-.title-page-devis h3{
  transform: rotate(-90deg);
  font-size: 3.5rem;
  border-bottom: 1px solid #563003;
@@ -31,10 +18,11 @@
  font-family: "Montserra",sans-serif;
 
 }
+
 .formcontact{
 	width: 100%;
 	height: 100%;	
-	margin-left: 10%;
+	margin-left: 5%;
 }
 
 .formcontact ul{
@@ -155,9 +143,10 @@ iframe{
 		font-size: 3rem;
 		margin-left: 0;
 		margin-top: 5%;
+        width: 70%;
 	}
 	.formcontact{
-		margin-left:0;
+		margin-left:-10%;
 		margin-top: 5%;
 	}
 	.form label {
@@ -201,11 +190,15 @@ padding: 20px 20px 20px 20px;
 	}
 }
 @media screen and (min-device-width:551px )and (max-device-width:700px){
+    .title-page{
+		margin-top: 5%;
+        width: 90%;
+	}
 	.contact{
 		margin-top: 5%;
 	}
 	.formcontact{
-		margin-left:5%;
+		margin-left:0;
 	}
 	
 	iframe{
@@ -217,6 +210,7 @@ padding: 20px 20px 20px 20px;
 	.formcontact label:last-child{
 		font-size: 20px;
 		width: 100%;
+        display: inline;
 	}
 	.form input{
 		font-size:20px;

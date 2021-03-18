@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/style.css" >
+    <link rel="stylesheet" type="text/css"  href="./css/form-devis.css" >
+  </head>
+<body>
+  <div class=contact>
+    <div class="title-page">
+        <h3> DEVIS GRATUIT </h3>
+    </div>
+
+    <form action="./php/mailer-contact.php" method="post" class="formcontact" enctype="multipart/form-data" >
+        <ul>
+
+              <li >
+                <div class="form">
+                <input type="text" id="nom" name="nom"  placeholder=" "  required >
+                <label for="nom"><span >Nom</span></label>
+                </div>
+              </li>
+              <li>
+                <div class="form">
+                <input type="email" id="mail" name="mail"  placeholder=" " required>
+                <label for="mail"><span >Email</span></label>
+              </div>
+            </li>
+        </ul>
+        <ul>
+            <li >
+              <div class="form">
+                <input type="text" id="prenom" name="prenom"  placeholder=" " required >
+                <label for="prenom"><span >Prénom</span></label>
+              </div>
+              </li>
+              <li>
+                <div class="form">
+                <input type="tel" id="tel" name="tel" placeholder=" " required>
+                <label for="tel"><span >Téléphone</span></label>
+              </div>
+              </li>
+            </ul>
+            <ul>
+              <li >
+               <div class="form">
+                <textarea id="msg" name="msg"  placeholder=" "></textarea>
+                <label for="msg"><span >Message</span></label>
+              </div>
+              </li>
+              
+              <li >
+                
+                
+                  <input  type="checkbox" id="check" value="" required>
+                  <label for="check" > J'accepte que les informations saisies dans ce formulaire soient utilisées, exploitées ou traitées pour permettre de me recontacter  dans le cadre de la relation commerciale qui découle de cette demande.</label>
+                
+              </li>     
+          </ul>
+          <button type="submit" class="btn">Envoyer</button>
+          </form>
+        </div>
+         
+
+  </nav>
+  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"
+  integrity="sha256-3arngJBQR3FTyeRtL3muAGFaGcL8iHsubYOqq48mBLw="
+  crossorigin="anonymous"
+></script>
+<div class="cursor"><div>
+
+  <script src="./js/app.js"></script>
+</body>
+</html>
