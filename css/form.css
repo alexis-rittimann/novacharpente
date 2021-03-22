@@ -17,20 +17,7 @@
  font-family: "Montserra",sans-serif;
 
 }
-.title-page-devis{
-	display: flex;
-	align-items: center;
-	margin-left: 5%;
-	width: 50%;
-}
-.title-page-devis h3{
- transform: rotate(-90deg);
- font-size: 3.5rem;
- border-bottom: 1px solid #563003;
- color: #563003;
- font-family: "Montserra",sans-serif;
 
-}
 .formcontact{
 	width: 100%;
 	height: 100%;	
@@ -237,47 +224,70 @@ padding: 20px 20px 20px 20px;
 
 @media screen and (min-device-width:376px )and (max-device-width:550px){
 	.contact{
-	margin-top: 5%;
-	margin-left: -5%;
+	display: flex;
+	flex-direction: column;
+	margin-top: 8%;
+	align-items: center;
 	}
-	.formcontact label{
-		font-size: 27px;
+	.formcontact li{
+		padding-top: 60px;
+		
 	}
+	
 	.formcontact label:last-child{
-		font-size: 27px;
+		font-size: 40px;
 		width: 100%;
 		display:inline;
 		
 	}
-	.formcontact li{
-		padding-top: 50px;
-		
+	.form label{
+		font-size: 35px;
 	}
+	.formcontact ul{
+		display: flex;
+		flex-direction: column;
+		align-items:flex-start;
+	}
+
 	.form input{
-		font-size:25px;
+		font-size:30px;
+		
 	}
 	.btn {
 		margin-right: -10%;
 		margin-top: 0;
 		float: none;
 		}
+		.title-page h3{
+            transform: rotate(0deg);
+			
+        }
+		
+        iframe{
+            display: none;
+        }
 }
 @media screen and (max-device-width:375px){
 	.contact{
+		display: flex;
+	flex-direction: column;
 	margin-top: 8%;
-	margin-left: -5%;
+	align-items: center;
+	}
+	.formcontact{
+		margin-top: -5%;
 	}
 	.formcontact label{
 		font-size: 35px;
 	}
 	.formcontact label:last-child{
-		font-size: 35px;
+		font-size: 45px;
 		width: 100%;
 		display: inline;
 		
 	}
 	.formcontact li{
-		padding-top: 50px;
+		padding-top: 85px;
 		
 	}
 	.form input{
@@ -288,4 +298,12 @@ padding: 20px 20px 20px 20px;
 		margin-top: 0;
 		float: none;
 		}
+		.title-page h3{
+            transform: rotate(0deg);
+			
+        }
+		
+        iframe{
+            display: none;
+        }
 }
