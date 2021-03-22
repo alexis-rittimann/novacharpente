@@ -55,7 +55,7 @@ padding-top: 50px;
 	border: none;
 	border-bottom:1px solid #E6D9B0;
 	font: 20px "Montserrat", sans-serif;
-	width: 50%;
+	width: 150%;
 	padding-top: 20px;
 	background: transparent;
 	color :#563003;
@@ -121,15 +121,18 @@ iframe{
 	width: 50%;
 	color :#563003;
 	font: 18px "Montserrat", sans-serif;
-	display: inline-block;
 	padding-top: 50px;
 	
 }
 .formcontact input[type=checkbox]{
 	height: 25px;
  	 width: 25px;
-	 vertical-align:15px;
+	 vertical-align:middle;
 	 
+	}
+	a{
+		text-decoration: none;
+		color: red; 
 	}
 .btn {
 	background-image: url(../img/1.png);

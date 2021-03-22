@@ -8,7 +8,8 @@
 	display: flex;
 	align-items: center;
 	margin-left: 5%;
-    width: 36%;
+    width: 45%;
+	margin-top: 8%;
 }
 .title-page h3{
  transform: rotate(-90deg);
@@ -29,7 +30,7 @@
 	list-style: none;
 	display: inline-block;
 	padding-left: 10%;
-	
+
 }
 .formcontact li{
 display: block;
@@ -56,7 +57,7 @@ padding-top: 50px;
 	border: none;
 	border-bottom:1px solid #E6D9B0;
 	font: 20px "Montserrat", sans-serif;
-	width: 50%;
+	width: 150%;
 	padding-top: 20px;
 	background: transparent;
 	color :#563003;
@@ -122,14 +123,17 @@ iframe{
 	width: 50%;
 	color :#563003;
 	font: 18px "Montserrat", sans-serif;
-	display: inline-block;
 	padding-top: 50px;
 	
+}
+a{
+    text-decoration: none;
+    color: red; 
 }
 .formcontact input[type=checkbox]{
 	height: 25px;
  	 width: 25px;
-	 vertical-align:15px;
+	  vertical-align: middle;
 	 
 	}
 .btn {
@@ -231,20 +235,33 @@ padding: 20px 20px 20px 20px;
 
 @media screen and (min-device-width:376px )and (max-device-width:550px){
 	.contact{
-	margin-top: 5%;
-	margin-left: -5%;
-	}
-	.formcontact label{
-		font-size: 27px;
-	}
+		display: flex;
+		flex-direction: column;
+		margin-top: 8%;
+		margin-left: 8%;
+		align-items: center;
+		}
+		.title-page{
+			align-items: center;
+		}
+		.title-page h3{
+            transform: rotate(0deg);
+			
+        }
+		.formcontact ul{
+			display: flex;
+			flex-direction: column;
+			align-items:flex-start;
+		}
+
 	.formcontact label:last-child{
-		font-size: 27px;
+		font-size: 30px;
 		width: 100%;
 		display:inline;
 		
 	}
 	.formcontact li{
-		padding-top: 50px;
+		padding-top: 80px;
 		
 	}
 	.form input{
@@ -258,20 +275,33 @@ padding: 20px 20px 20px 20px;
 }
 @media screen and (max-device-width:375px){
 	.contact{
-	margin-top: 8%;
-	margin-left: -5%;
-	}
-	.formcontact label{
-		font-size: 35px;
-	}
+		display: flex;
+		flex-direction: column;
+		margin-top: 8%;
+	
+		align-items: center;
+		}
+		.title-page{
+			align-items: center;
+		}
+		.title-page h3{
+            transform: rotate(0deg);
+			margin-left: 14%;
+        }
+		.formcontact ul{
+			display: flex;
+			flex-direction: column;
+			align-items:flex-start;
+			
+		}
 	.formcontact label:last-child{
-		font-size: 35px;
+		font-size: 40px;
 		width: 100%;
 		display: inline;
 		
 	}
 	.formcontact li{
-		padding-top: 50px;
+		padding-top: 85px;
 		
 	}
 	.form input{
