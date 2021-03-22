@@ -76,11 +76,13 @@ iframe{
 .form input:valid + label span
 {
   transform: translateY(-150%);
+  font-size: 15px;
   
 }
 .form textarea:focus + label span,
 .form textarea:not(:placeholder-shown) + label span  {
   transform: translateY(-200%);
+  font-size: 15px;
   
 }
 .form input:focus + label::after,
@@ -126,22 +128,47 @@ iframe{
 	padding-top: 50px;
 	
 }
-a{
-    text-decoration: none;
-    color: red; 
-}
+
 .formcontact input[type=checkbox]{
 	height: 25px;
  	 width: 25px;
 	  vertical-align: middle;
 	 
 	}
-.btn {
-	background-image: url(../img/1.png);
-	float:right ;
-	margin-right: 30%;
-	margin-top: -5%;
+
+.check label {
+	margin-top: 40%;
 }
+
+
+.formcontact input[type=submit] {
+	width: 40px;
+	border:none;
+	background-color: white;
+	height: 40px;	
+	background-image:url(../img/bouton1.png);
+	margin-left: 50%;
+	
+}
+
+
+.formcontact input[type=submit]:hover {
+	background-image: url(../img/bouton2.png);
+}
+
+
+
+a{
+    
+    color: #563003; 
+}
+
+a:hover {
+	text-decoration: none ;
+}
+
+
+
 @media screen and (max-width:1024px){
 	.title-page{
 		font-size: 3rem;
