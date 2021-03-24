@@ -19,7 +19,32 @@ input[type="checkbox"],
 button{
 cursor:none;
 }
+.loader{
+	top:0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background: white;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	z-index: 99;
+}
 
+#line-container {
+	
+    width: 300px;
+    height: 40px;	
+	
+}
+.progress-text {
+	
+	font-size: 1.25em;
+	color: black;
+	font-weight: 600;
+  }
 .cursor {
 	width: 40px;
 	height: 40px;
