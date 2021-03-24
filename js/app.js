@@ -1,5 +1,12 @@
 const cursor = document.querySelector('.cursor');
-
+const menutel=document.querySelector('.cercleTel');
+const menumail=document.querySelector('.cercleMail');
+const menu=document.querySelector('.cercle');
+const toggle1=document.querySelector('.toggle span');
+const toggle2=document.querySelector('.toggle span:nth-child(2)');
+const toggle3=document.querySelector('.toggle span:nth-child(3)');
+const load=document.querySelector('.loader');
+var toggleBtn = document.querySelector(".toggle");
 document.addEventListener('mousemove', e => {
 	cursor.setAttribute('style', 'top:'+(e.pageY - 20)+"px; left:"+
 	(e.pageX - 20)+"px;")
@@ -14,7 +21,7 @@ document.addEventListener('click', ()=>{
 	}, 500);
 
 })
- const load=document.querySelector('.loader');
+
 
   window.addEventListener('load',function() {
 
@@ -53,7 +60,7 @@ $(document).ready(function(){
     $(".link-img img"+activeLinkId).addClass("active");
   });
 
-  var toggleBtn = document.querySelector(".toggle");
+  
   //GSAP timeline
   var tl = new TimelineMax({paused: true});
 
@@ -87,6 +94,35 @@ $(document).ready(function(){
   tl.reverse();
   //Click to play Timeline
   toggleBtn.onclick = function(){
+
+    if (!toggleBtn.classList.contains("active")) {
+      toggleBtn.classList.add('active');
+    tl.reversed(!tl.reversed());
+  }
+  else{
+    toggleBtn.classList.remove('active');}
     tl.reversed(!tl.reversed());
   }
 });
+/* affichage des 2 cercles */
+menu.addEventListener("mouseenter", function(){
+  if(!toggleBtn.classList.contains("active")){
+  menutel.style.visibility='visible';
+  menumail.style.visibility='visible';
+  menu.style.backgroundColor='#E6D9B0';
+  toggle1.style.backgroundColor='#563003';
+  toggle2.style.backgroundColor='#563003';
+  toggle2.style.width='30px';
+  toggle3.style.visibility='hidden';
+  setTimeout(function() {
+    menutel.style.visibility='hidden';
+    menumail.style.visibility='hidden';
+    menu.style.backgroundColor='#563003';
+    toggle1.style.backgroundColor='#E6D9B0';
+    toggle2.style.width='48px';
+    toggle2.style.backgroundColor='#E6D9B0';
+    toggle3.style.visibility='visible';
+  }, 3000);
+
+}
+}); 

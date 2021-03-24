@@ -130,6 +130,31 @@ cursor:none;
   z-index: 100;
 
 }
+/* cercle pour telephone et mail*/
+.cercleTel{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  right: 120px;
+  top:55px;
+  border-radius: 50%;
+  background-color: #E6D9B0;
+  z-index: 99;
+  visibility: hidden;
+
+}
+.cercleMail{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  right: 80px;
+  top:100px;
+  border-radius: 50%;
+  background-color: #E6D9B0;
+  z-index: 99;
+  visibility: hidden;
+}
+/**/
 .toggle span{
   position: absolute;
   width: 48px;
