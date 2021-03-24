@@ -1,7 +1,8 @@
 body {
 	margin: 0;
 	padding: 0;
-	height: 100vh;
+	height: 100%;
+	width: 100%;
 	background: white;
 	cursor: none;
 	overflow: hidden;
@@ -62,4 +63,27 @@ cursor:none;
 		opacity:0;
 	}
 }
+
+
+.title-page h1{
+ transform: rotate(-90deg);
+ font-size: 3.5rem;
+ color: #563003;
+ font-family: "Montserra",sans-serif;
+ float: left;
+ margin-top: 28%;
+ border-bottom: 1px solid #563003;
+
+}
+
+.title-page {
+	display: block;
+	vertical-align: middle;
+}
+
+
+
+
+
+
 

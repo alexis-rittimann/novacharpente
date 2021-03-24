@@ -4,21 +4,8 @@
 	margin-top: 5%;
 	position: fixed;
 }
-.title-page{
-	display: flex;
-	align-items: center;
-	margin-left: 5%;
-    width: 45%;
-	margin-top: 8%;
-}
-.title-page h3{
- transform: rotate(-90deg);
- font-size: 3.5rem;
- border-bottom: 1px solid #563003;
- color: #563003;
- font-family: "Montserra",sans-serif;
 
-}
+
 
 .formcontact{
 	width: 100%;
